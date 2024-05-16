@@ -2,6 +2,7 @@ package com.ex.demoauth.service;
 
 import com.ex.demoauth.dto.BoardDTO;
 import com.ex.demoauth.dto.PageDTO;
+import com.ex.demoauth.mapper.BoardMapper;
 import com.ex.demoauth.repository.BoardRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,8 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class BoardService
 {
-    private final BoardRepository boardRepository;
+    // private final BoardRepository boardRepository;
+    private final BoardMapper boardRepository;
 
     public int Save(BoardDTO _dto)
     {
